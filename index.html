@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J8CBRENW5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6J8CBRENW5');
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomas Orlando</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Existing styles */
+        .publication {
+            margin-bottom: 40px;
+        }
+        .publication h3 {
+            margin-bottom: 10px;
+        }
+        .publication p {
+            margin: 8px 0;
+        }
+        .publication .authors {
+            margin: 8px 0;
+        }
+        .publication .venue {
+            margin: 8px 0;
+        }
+        .button-group {
+            margin: 8px 0;
+        }
+        .button-group button {
+            background: none;
+            border: 1px solid #2e7d32;
+            color: #2e7d32;
+            padding: 4px 12px;
+            margin-right: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .button-group button:hover {
+            background: #2e7d32;
+            color: white;
+        }
+        .summary {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Hide Home link in landscape mode */
+        @media screen and (min-width: 1024px) {
+            .nav-links li:first-child {
+                display: none;
+            }
+        }
+
+        /* New styles for two-column layout */
+        @media screen and (min-width: 1024px) {
+            body {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+            }
+
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+
+            #home {
+                position: fixed;
+                left: 0;
+                top: 60px; /* Height of navbar */
+                bottom: 0;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+                padding: 20px;
+                box-sizing: border-box;
+                color: #2c3e50;
+            }
+
+            #home .hero-content {
+                max-width: 100%;
+            }
+
+            #home .profile-image img {
+                max-width: 200px;
+            }
+
+            #home .social-links a {
+                color: #2c3e50;
+            }
+
+            #home .social-links a:hover {
+                color: #2e7d32;
+            }
+
+            .main-content {
+                margin-left: 40%;
+                margin-top: 60px; /* Height of navbar */
+                padding: 20px;
+                width: 60%;
+                background: white;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            background: white;
+            padding: 20px;
+        }
+
+        .nav-links a:hover {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Tomas Agustin Gonzalez Orlando</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#opensource">Open Source</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="pp.jpeg" alt="Tomas Agustin Gonzalez Orlando">
+            </div>
+            <h1>Tomas Agustin Gonzalez Orlando</h1>
+            <p>Senior Software Engineer, arm.</p>
+            <p>MSc Engineering</p>
+            <p><span id="email"></span></p>
+            <div class="social-links">
+                <a href="cv.pdf" class="social-link"><i class="fas fa-file-alt"></i></a>
+                <a href="https://github.com/taomasgonzalez/" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tgorlando/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a Senior Software Engineer at <a href="https://arm.com">arm</a>, UK's biggest semiconductor company on a mission to build the future of computing. I enjoy training neural networks, writing efficient code and thinking holistically, focusing on optimization where it adds real value.</p>
+                <p>In my personal time, I develop projects and study topics at the intersection of Artificial Intelligence, Biology, and Mathematics.
+                    I'm very mathematically inclined and often delve into Linear Algebra, Spectral analysis, Time series, Stochastic Signals, etc.
+                    My portfolio of AI projects is growing rapidly and includes work on multi-omics (transcriptomics + histology) using GNNs, ECG processing and even self-playing videogames.
+                </p>
+                <p>I did my MSc in Electronic Engineering at <a href="https://www.itba.edu.ar/en/">ITBA</a>, specializing in Signal Processing, where I've also studied bioengineering and chemistry.</p>
+                <p>I contribute to several open source projects under <a href="https://github.com/taomasgonzalez">taomasgonzalez</a> and <a href="https://github.com/tgonzalezorlandoarm">tgonzalezorlandoarm</a>.</p>
+                <p>I was born and raised in Buenos Aires, Argentina 🇦🇷, I'm italian 🇮🇹 and I'm living in the UK 🇬🇧</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🧠 arm </h3>
+                    <p class="date">Senior Software Engineer | March 2021 - Present | Cambridge, UK</p>
+                    <p>Senior Software Engineer - enabling arm computing on software </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>📡 Siemens</h3>
+                    <p class="date"> Cibersecurity Intern | Nov 2019 - Jan 2021 | Bs. As., Argentina</p>
+                    <p>Risk Assessment and threat Intelligence.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>📚 Instituto Tecnologico de Buenos Aires (ITBA)</h3>
+                    <p class="date">Advanced Mathematics for Signal Processing Teaching Assistant | Feb 2019 - Dec 2019 | Buenos Aires, Argentina</p>
+                    <p>Fourier analysis, spectral and frequency-domain + Partial Differential Equations</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>📚 Instituto Tecnologico de Buenos Aires (ITBA)</h3>
+                    <p class="date"> C Programming Teaching Assistant | Jul 2018 - Dec 2019 | Buenos Aires, Argentina</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research">
+            <h2>Research</h2>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Brain Layer Classification - Multi-omics (Transcriptomics + Histology) with Graph Neural Networks</h3>
+                    <p class="authors"><span style="color: #2e7d32">Tomas Agustin Gonzalez Orlando</span></p>
+                    <p class="venue" style="color: #2e7d32;">Independent research, personal project</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/GNNCellClassification', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/GNNCellClassification/blob/main/report/report.pdf', '_blank')">Draft Report</button>
+                    </div>
+                    <div class="summary">
+                        <p>Combines Graph Convolutional Neural Networks with Gene Expression and Histology information
+                            to classify Brain Layers (1-6 and White Matter). End-to-end Machine Learning pipeline.</p>
+                    </div>
+                </div>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Arrhythmia Detection with 1D Convolutional Neural Network</h3>
+                    <p class="authors"><span style="color: #2e7d32">Tomas Agustin Gonzalez Orlando</span></p>
+                    <p class="venue" style="color: #2e7d32;">Independent research, personal project</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/HeartAnomalyDetector', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/HeartAnomalyDetector/blob/main/README.md', '_blank')">README</button>
+                    </div>
+                    <div class="summary">
+                        <p>End-to-end Machine Learning pipeline to analyze ECG recordings from the MIT-BIH Arrhythmia Database for automated arrhythmia detection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Deep Q-Network Learning "Bubble Shooter" self-playing videogame</h3>
+                    <p class="authors"><span style="color: #2e7d32">Tomas Agustin Gonzalez Orlando, Juan Manuel Romaris</span></p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Bubble-Game-Q-Learning', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Bubble-Game-Q-Learning/blob/main/Q%20Learning%20Bubbles!.ipynb', '_blank')">Presentation</button>
+                    </div>
+                    <div class="summary">
+                        <p>Implementation of a self-playing game using Deep Q-Network Reinforcement Learning.
+                            Conceptually based on Google DeepMind's Deep Reinforcement Learning for the Atari 2600 console.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Implementation and analysis of Automated pitch-tracking algorithms</h3>
+                    <p class="authors"><span style="color: #2e7d32">Tomas Agustin Gonzalez Orlando, Juan Manuel Romaris</span></p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Voice_Pitch_Tracking', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Voice_Pitch_Tracking/blob/master/Report/PitchTrackingVoice.pdf', '_blank')">Report</button>
+                    </div>
+                    <div class="summary">
+                        <p>Implements modified versions of different pitch-tracking algorithms (YIN, Harmonic Product Spectrum, Short-time Auto-correlation) and compares them.
+                            Our modified version of the YIN algorithm achieves real-time performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Detection of heart anomalies via adaptive LMS and RLS filters in ECG signals</h3>
+                    <p class="authors"><span style="color: #2e7d32">Tomas Agustin Gonzalez Orlando, Ariel Santiago Nowik</span></p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Electrocardiogram-RLS', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/taomasgonzalez/Electrocardiogram-RLS/blob/master/Informe/conference_101719.pdf', '_blank')">Report</button>
+                    </div>
+                    <div class="summary">
+                        <p>Implements a heart anomaly detector using Adaptive Recursive Filtering </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opensource" class="opensource">
+            <h2>Open Source</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>PyTorch/ExecuTorch PTE model Visualizer</h3>
+                    <p>
+                        PTE Adapter for google-ai-edge/model-explorer that enables visualization of PTE files for Arm® Ethos™-U NPU Backend and Arm® VGF Backend targets.<br>
+                        <em>Contributions: Main Contributor. Design and Development from scratch.</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://github.com/arm/pte-adapter-model-explorer', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/arm/pte-adapter-model-explorer/commits?author=tgonzalezorlandoarm', '_blank')">My contributions</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h3>Parsec</h3>
+                    <p>
+                        Platform AbstRaction for SECurity: common API to hardware security and cryptographic services in a platform-agnostic way<br>
+                        <em>Contributions: Project Maintainer - Led community calls and releases. Added new features, fixed security vulnerabilities, fixed bugs, improved documentation and CI.</em>
+                        <em>Greenfield projects under Parallaxsecond.</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://github.com/parallaxsecond/parsec/blob/1.4.1/MAINTAINERS.toml#L77', '_blank')">Maintainer status</button>
+                        <button onclick="window.open('https://github.com/parallaxsecond/parsec', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/parallaxsecond/parsec/commits?author=tgonzalezorlandoarm', '_blank')">My contributions</button>
+                        <button onclick="window.open('https://github.com/parallaxsecond/parsec-openssl-provider', '_blank')">Greenfield project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Cassini Reference Software Stack</h3>
+                    <p>
+                        Standards-based initiative to deliver a seamless cloud-native software experience for devices based on Arm Cortex-A<br>
+                        <em>Contributions: Non-public contributions</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://gitlab.com/Linaro/cassini', '_blank')">Project page</button>
+                        <button onclick="window.open('https://cassini.readthedocs.io/en/latest/introduction.html', '_blank')">Project Documentation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Kronos Reference Software Stack</h3>
+                    <p>
+                        Reference Software Stack for Arm Compute Sub-Systems targeting the automotive sector.<br>
+                        <em>Contributions: Embedded Linux (yocto, system +driver support), Python Q&A testing and CI</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://gitlab.arm.com/automotive-and-industrial/kronos-ref-stack/kronos', '_blank')">Project page</button>
+                        <button onclick="window.open('https://gitlab.arm.com/automotive-and-industrial/kronos-ref-stack/kronos/-/commits/main?search=TomasAgustin.GonzalezOrlando', '_blank')">My contributions</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Corstone 1000</h3>
+                    <p>
+                        Reference solution for IoT devices. It consists of hardware and software reference implementation.<br>
+                        <em>Contributions: SystemReady testing and preparation, bug fixes and documentation</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://corstone1000.docs.arm.com/en/styhead/software-architecture.html', '_blank')">Project Documentation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>System Control Processor Firmware</h3>
+                    <p>
+                        Reference Software Stack for the System power management in several Arm Compute Sub-Systems.<br>
+                        <em>Contributions: MHUv3 Driver Support (fast channels and doorbell), Documentation and CI</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://gitlab.arm.com/firmware/SCP-firmware', '_blank')">Project page</button>
+                        <button onclick="window.open('https://gitlab.arm.com/firmware/SCP-firmware/-/commits/main?search=TomasAgustin.GonzalezOrlando', '_blank')">My contributions</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Mbed TLS</h3>
+                    <p>
+                        Mbed TLS is a C library that implements cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols<br>
+                        <em>Contributions: Security contributions and testing</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://github.com/Mbed-TLS/mbedtls', '_blank')">Project page</button>
+                        <button onclick="window.open('https://github.com/search?q=repo%3AMbed-TLS%2Fmbedtls+tgonzalezorlandoarm&type=pullrequests', '_blank')">My contributions</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Rust Arm FF-A</h3>
+                    <p>
+                        Rust Crate for Arm Firmware Framework for A-Profile<br>
+                        <em>Contributions: Added firmware features</em>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://crates.io/crates/arm-ffa', '_blank')">Crate page</button>
+                        <button onclick="window.open('https://review.trustedfirmware.org/q/author:%22tomasagustin.gonzalezorlando@arm.com%22+project:%22rust-spmc/arm-ffa%22+-status:abandoned', '_blank')">My contributions</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>MSc Electronic Engineering, Intituto Tecnologico de Buenos Aires</h3>
+                    <p>
+                        5 years degree with a Specialization in Signal Processing.<br>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://ri.itba.edu.ar/entities/proyecto%20final%20de%20grado/74abcc7d-8127-4ac6-b277-4554d901c7a2', '_blank')">Thesis</button>
+                    </div>
+                    <div class="summary">
+                        <p>Neural Networks, Stochastic signals, Audio and Image Processing, Linear Algebra, Statistics, Mathematics, Molecular and Cellular Biology, Lab work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Deep Learning Nanodegree, Udacity</h3>
+                    <p>
+                        4 months Nanodegree<br>
+                    </p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">Summary</button>
+                        <button onclick="window.open('https://www.udacity.com/certificate/e/a80e95f0-e253-11ef-bdd6-fb83d048c1f5', '_blank')">Credential</button>
+                    </div>
+                    <div class="summary">
+                        <p>PyTorch based. Deep learning model optimization, Convolutional neural networks, Generative adversarial networks, Autoencoders, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="awards">
+            <h2>Awards</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🏆 Awards</h3>
+                    <p style="margin: 4px 0;">• At the age of 17, I was the winner of a 6-month scholarship to study Mandarin at <a href="https://en.wikipedia.org/wiki/Jilin_University" target="_blank" style="color: #2e7d32; text-decoration: none;">Jilin University</a> as a result of the  <a href="https://en.wikipedia.org/wiki/Chinese_Bridge" target="_blank" style="color: #2e7d32; text-decoration: none;">Chinese Bridge Competition</a> </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleAbstract(event) {
+            event.preventDefault();
+            const abstract = document.getElementById('thesis-abstract');
+            const button = event.target;
+
+            if (abstract.style.display === 'none' || abstract.style.display === '') {
+                abstract.style.display = 'block';
+                button.textContent = 'hide abstract';
+            } else {
+                abstract.style.display = 'none';
+                button.textContent = 'abstract';
+            }
+        }
+
+        function toggleSummary(event) {
+            event.preventDefault();
+            const button = event.target;
+            const summary = button.parentElement.nextElementSibling;
+
+            if (summary.style.display === 'none' || summary.style.display === '') {
+                summary.style.display = 'block';
+                button.textContent = 'hide summary';
+            } else {
+                summary.style.display = 'none';
+                button.textContent = 'summary';
+            }
+        }
+
+        // Email protection
+        window.onload = function() {
+            const parts = ['taomasgonzalez', '@', 'gmail', '.', 'com'];
+            const emailElement = document.getElementById('email');
+            emailElement.textContent = parts.join('');
+            emailElement.innerHTML = `<a href="mailto:${parts.join('')}" style="color: inherit; text-decoration: none;">${parts.join('')}</a>`;
+        }
+    </script>
+</body>
+</html>
