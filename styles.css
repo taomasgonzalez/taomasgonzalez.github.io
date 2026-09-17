@@ -39,7 +39,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 .nav-links a {
@@ -151,6 +151,12 @@ section h2 {
 .research-content {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.earlier-intro {
+    margin-bottom: 2rem;
+    color: #666;
+    text-align: center;
 }
 
 .publication {
